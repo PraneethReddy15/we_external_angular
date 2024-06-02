@@ -1,0 +1,9 @@
+<div style="text-align: center;">
+    <button (click)="toggleDetails()">Show Product Details</button>
+    <div *ngIf="showDetails">
+      <p><strong>Name:</strong> {{ product.name }}</p>
+      <p><strong>Price:</strong> {{ product.price }}</p>
+      <p><strong>Category:</strong> {{ product.category }}</p>
+    </div>
+  </div>
+  
